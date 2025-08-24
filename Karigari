@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KARIGARI - Art & Craft Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfcfb;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1523978591478-c753949ff840') center/cover;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      margin: 15px 0 5px;
+    }
+    .product-card p {
+      color: #777;
+      font-size: 14px;
+    }
+    .product-card button {
+      margin: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #2c3e50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .product-card button:hover {
+      background: #f39c12;
+    }
+    section {
+      padding: 40px;
+    }
+    #about {
+      background: #f0f0f0;
+      text-align: center;
+    }
+    #contact {
+      background: #fff;
+      text-align: center;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    form input, form textarea {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      padding: 10px 20px;
+      background: #2c3e50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KARIGARI</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Handmade with Love ❤️</h2>
+    <p>Discover unique Art & Craft products that bring creativity to life.</p>
+  </section>
+
+  <section id="products" class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1503602642458-232111445657" alt="Handmade Pottery">
+      <h3>Handmade Pottery</h3>
+      <p>₹999</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1602526216435-6f07d5b3c3f0" alt="Wall Painting">
+      <h3>Wall Painting</h3>
+      <p>₹1499</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1580136579312-94651b51d1f5" alt="Crafted Jewelry">
+      <h3>Crafted Jewelry</h3>
+      <p>₹799</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About KARIGARI</h2>
+    <p>KARIGARI is a platform to showcase and sell unique handmade art and craft items.  
+       Every piece is created with passion, creativity, and love by skilled artisans.  
+       Our mission is to connect traditional craftsmanship with modern homes.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to collaborate? Send us a message!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" rows="5" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KARIGARI | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
